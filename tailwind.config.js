@@ -15,6 +15,12 @@ module.exports = {
       '10':'[full-start] repeat(10, minmax(0, 1fr)) [full-end]',
       '11':'[full-start] repeat(11, minmax(0, 1fr)) [full-end]',
       '12':'[full-start] repeat(12, minmax(0, 1fr)) [full-end]',      
+    },
+    extend:{
+      fontFamily:{
+        'DMSans':['"DM Sans"', 'sans-serif'],         
+        'OpenSans':['"Open Sans"', 'sans-serif'],         
+      }
     }
   },
   plugins: [],
