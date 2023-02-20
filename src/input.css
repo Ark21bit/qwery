@@ -5,7 +5,7 @@
 @layer base {
     :root{
         /* макимальная ширина контента */
-        --widthContent:1280px;
+        --widthContent:1440px;
         /* Растояние от границы брузера по бокам */
         --widthContentMargin:16px;
     }
@@ -28,5 +28,9 @@
 
     .container{        
         @apply max-w-[var(--widthContent)]
+    }
+    
+    .writing-mode-tb{
+        writing-mode: tb;
     }
 }
