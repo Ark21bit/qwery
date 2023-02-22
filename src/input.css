@@ -1,42 +1,47 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
-    :root{
-        /* макимальная ширина контента */
-        --widthContent:1440px;
-        /* Растояние от границы брузера по бокам */
-        --widthContentMargin:16px;
-    }
+  :root {
+    /* макимальная ширина контента */
+    --widthContent: 1440px;
+    /* Растояние от границы брузера по бокам */
+    --widthContentMargin: 16px;
+  }
 
-    body{
-        @apply font-OpenSans
-    }
+  body {
+    @apply font-OpenSans;
+  }
 
-    /* Настройка кастомных контейнеров */
-    /* Применение системы гридов для расположения контента в ячейку main или full или в любую другую ячейку между именованными линиями grid*/
+  /* Настройка кастомных контейнеров */
+  /* Применение системы гридов для расположения контента в ячейку main или full или в любую другую ячейку между именованными линиями grid*/
 
-    .grid-container{        
-        grid-template-columns: [full-start] minmax(var(--widthContentMargin), 1fr) [main-start] minmax(0, var(--widthContent)) [main-end] minmax(var(--widthContentMargin), 1fr) [full-end];
-        @apply grid
-    }
+  .grid-container {
+    grid-template-columns:
+      [full-start] minmax(var(--widthContentMargin), 1fr) [main-start] minmax(
+        0,
+        var(--widthContent)
+      )
+      [main-end] minmax(var(--widthContentMargin), 1fr) [full-end];
+    @apply grid;
+  }
 
-    .grid-container>*{        
-        @apply col-[main]
-    }    
+  .grid-container > * {
+    @apply col-[main];
+  }
 
-    .wrapper{ 
-        @apply mx-auto w-[calc(100%-var(--widthContentMargin)*2)] max-w-[var(--widthContent)]
-    }
+  .wrapper {
+    @apply mx-auto w-[calc(100%-var(--widthContentMargin)*2)] max-w-[var(--widthContent)];
+  }
 
-    .container{        
-        @apply max-w-[var(--widthContent)]
-    }
-    
-    .writing-mode-tb{
-        writing-mode: tb;
-    }
+  .container {
+    @apply max-w-[var(--widthContent)];
+  }
+
+  .writing-mode-tb {
+    writing-mode: tb;
+  }
 }

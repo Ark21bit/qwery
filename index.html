@@ -81,29 +81,31 @@
         <div class="main">
 			
             <header class="w-full flex flex-col max-w-[1752px] mx-auto box-border px-4 h-screen">
-                <div class="flex gap-12 items-center justify-between text-white py-14">
-                    <div class="font-bold text-2xl leading-snug capitalize ">QWERy</div>
-                    <nav class="flex gap-12 items-center font-semibold text-lg leading-snug">
+                <div class="flex max-md:flex-wrap gap-4 lg:gap-12 items-center justify-between text-white py-14">
+                    <div class= text-lg md:text-xl"lg:font-bold text-2xl leading-snug capitalize ">QWERy</div>
+                    <nav class="flex max-md:order-last gap-6 lg:gap-12 items-center font-semibold text-base lg:text-lg leading-snug">
                         <a href="#">Information</a>
                         <a href="#">About us</a>
                         <a href="#">Culture</a>
                     </nav>
                     <div class="flex gap-3.5 items-center opacity-60">
                         <img src="assets/img/search.svg" alt="" class="shrink-0">
-                        <div class="grow" ><input type="text" class="w-full bg-transparent focus:outline-none text-white placeholder:text-white" placeholder="search"></div>
+                        <div class="grow" >
+                            <input type="text" class="w-full bg-transparent focus:outline-none text-white placeholder:text-white" placeholder="search">
+                        </div>
                     </div>
                 </div>
-                <div class="flex text-white grow">
-                    <div class="flex gap-5 flex-col mt-48">
+                <div class="flex gap-4 text-white grow">
+                    <div class="flex gap-5 flex-col mt-32 md:mt-40 lg:mt-48">
                         <p class="font-semibold text-lg leading-snug writing-mode-tb">Follow us</p>                
                         <a href="#"><img src="assets/img/icons/instagram.svg" alt=""></a>
                         <a href="#"><img src="assets/img/icons/twitter.svg" alt=""></a>
                         <a href="#"><img src="assets/img/icons/Facebook.svg" alt=""></a>                
                     </div>
-                    <div class="flex items-center flex-col mt-36 grow">
+                    <div class="flex max-lg:text-center items-center flex-col mt-20 md:mt-28 lg:mt-36 grow">
                         <div>
-                            <p class="before:h-0.5 flex items-center uppercase text-lg font-bold leading-snug tracking-[0.375rem] before:mr-8 before:bg-[#FFC178] before:w-[4.5rem] text-[#FFC178]">explore the Nature Beauty</p>
-                            <h1 class="mt-8 text-8xl leading-[1.04] font-bold capitalize max-w-[950px]">Discover Wonderful Indonesia</h1>
+                            <p class="before:h-0.5 max-lg:justify-center flex items-center uppercase text-base lg:text-lg font-bold leading-snug tracking-[0.375rem] max-md:before:hidden before:mr-8 before:bg-[#FFC178] before:w-[4.5rem] text-[#FFC178]">explore the Nature Beauty</p>
+                            <h1 class="mt-8 text-4xl md:text-6xl lg:text-8xl leading-[1.04] font-bold capitalize max-w-[950px]">Discover Wonderful Indonesia</h1>
                         </div>
                         <button class="flex items-center gap-2 mt-32">
                             <span class="font-semibold text-lg leading-snug">Scroll down</span>
@@ -113,12 +115,12 @@
                 </div>
             </header>
             <main class="grid-container">
-                <div class="flex gap-4 justify-between items-center pt-56">
-                    <div class="max-w-fit flex-1"><img src="assets/img/image2.webp" alt=""></div>
+                <div class="flex max-md:flex-col gap-4 justify-between items-center pt-28 md:pt-40 lg:pt-56">
+                    <div class="max-md:order-first max-w-fit flex-1"><img src="assets/img/image2.webp" alt=""></div>
                     <div class="text-white flex-1 space-y-7 max-w-[632px]">
                         <p class="before:h-0.5 flex items-center uppercase text-lg font-bold leading-snug tracking-[0.375rem] before:mr-6 before:bg-[#FFC178] before:w-[4.5rem] text-[#FFC178]">EAST nUSA TENGGARA</p>
-                        <h2 class="text-[4rem] font-bold leading-snug">Have you enjoyed your holiday?</h2>
-                        <p class="text-lg font-semibold  leading-[1.78]">You will be amazed if you take part in this sailing Komodo island tour package. So it is also mandatory for you, besides enjoying Komodo tourism on Komodo Island, you also have to taste the marine tourism.  The beautiful waters of Komodo will make you meet many travelers from other countries.</p>
+                        <h2 class="text-4xl md:text-5xl lg:text-[4rem] font-bold leading-snug">Have you enjoyed your holiday?</h2>
+                        <p class="text-base lg:text-lg font-semibold  leading-[1.78]">You will be amazed if you take part in this sailing Komodo island tour package. So it is also mandatory for you, besides enjoying Komodo tourism on Komodo Island, you also have to taste the marine tourism.  The beautiful waters of Komodo will make you meet many travelers from other countries.</p>
                         <a href="#" class="flex items-center gap-2 text-lg font-bold leading-snug text-[#FBD784]">
                             read more
                             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="17" viewBox="0 0 25 17" fill="none"><path d="M16.5 0.376708L15.09 1.78671L20.67 7.37671L0.5 7.37671L0.5 9.37671L20.67 9.37671L15.08 14.9567L16.5 16.3767L24.5 8.37671L16.5 0.376708Z" fill="#FBD784"/></svg>
@@ -127,14 +129,14 @@
                 </div>
         
                 <!-- Slider main container -->
-                <div class="swiper h-[61rem] w-full mt-56">
+                <div class="swiper h-fit md:h-[40rem] lg:h-[61rem] w-full mt-28 md:mt-40 lg:mt-56">
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
                         <!-- Slides -->
-                        <div class="swiper-slide bg-center bg-[url(../img/image3.webp)] p-6 text-white items-center text-center bg-cover flex flex-col">
+                        <div class="swiper-slide bg-center bg-[url(../img/image3.webp)] p-3 lg:p-6 text-white items-center text-center bg-cover flex flex-col">
                             <div class="max-w-[58rem] mt-auto items-center flex flex-col space-y-7">
                                 <p class="before:h-0.5 after:h-0.5 flex items-center uppercase text-lg font-bold leading-snug tracking-[0.375rem] before:mr-6 before:bg-[#FFC178] before:w-[4.5rem] after:ml-6 after:bg-[#FFC178] after:w-[4.5rem] text-[#FFC178]">Bromo</p>
-                                <h2 class="text-[4rem] max-w-[44rem] font-bold leading-snug">Steady your steps, we will climb together!</h2>
+                                <h2 class="text-4xl md:text-5xl lg:text-[4rem] max-w-[44rem] font-bold leading-snug">Steady your steps, we will climb together!</h2>
                                 <p class="text-lg font-semibold  leading-[1.78]">Enjoying the vast expanse of the sea of ​​​​sand, witnessing the splendor of Mount Semeru that soars into the sky, and gazing at the beauty of the sun moving out of its bed or otherwise enjoying the dim twilight from the Bromo ridge is an unforgettable experience when visiting Bromo.</p>
                                 <a href="#" class="flex items-center gap-2 text-lg font-bold leading-snug text-[#FBD784]">
                                     read more
@@ -142,10 +144,10 @@
                                 </a>
                             </div>
                         </div>             
-                        <div class="swiper-slide bg-center bg-[url(../img/image3.webp)] p-6 text-white items-center text-center bg-cover flex flex-col">
+                        <div class="swiper-slide bg-center bg-[url(../img/image3.webp)] p-3 lg:p-6 text-white items-center text-center bg-cover flex flex-col">
                             <div class="max-w-[58rem] mt-auto items-center flex flex-col space-y-7">
                                 <p class="before:h-0.5 after:h-0.5 flex items-center uppercase text-lg font-bold leading-snug tracking-[0.375rem] before:mr-6 before:bg-[#FFC178] before:w-[4.5rem] after:ml-6 after:bg-[#FFC178] after:w-[4.5rem] text-[#FFC178]">Bromo</p>
-                                <h2 class="text-[4rem] max-w-[44rem] font-bold leading-snug">Steady your steps, we will climb together!</h2>
+                                <h2 class="text-4xl md:text-5xl lg:text-[4rem] max-w-[44rem] font-bold leading-snug">Steady your steps, we will climb together!</h2>
                                 <p class="text-lg font-semibold  leading-[1.78]">Enjoying the vast expanse of the sea of ​​​​sand, witnessing the splendor of Mount Semeru that soars into the sky, and gazing at the beauty of the sun moving out of its bed or otherwise enjoying the dim twilight from the Bromo ridge is an unforgettable experience when visiting Bromo.</p>
                                 <a href="#" class="flex items-center gap-2 text-lg font-bold leading-snug text-[#FBD784]">
                                     read more
@@ -153,10 +155,10 @@
                                 </a>
                             </div>
                         </div>             
-                        <div class="swiper-slide bg-center bg-[url(../img/image3.webp)] p-6 text-white items-center text-center bg-cover flex flex-col">
+                        <div class="swiper-slide bg-center bg-[url(../img/image3.webp)] p-3 lg:p-6 text-white items-center text-center bg-cover flex flex-col">
                             <div class="max-w-[58rem] mt-auto items-center flex flex-col space-y-7">
                                 <p class="before:h-0.5 after:h-0.5 flex items-center uppercase text-lg font-bold leading-snug tracking-[0.375rem] before:mr-6 before:bg-[#FFC178] before:w-[4.5rem] after:ml-6 after:bg-[#FFC178] after:w-[4.5rem] text-[#FFC178]">Bromo</p>
-                                <h2 class="text-[4rem] max-w-[44rem] font-bold leading-snug">Steady your steps, we will climb together!</h2>
+                                <h2 class="text-4xl md:text-5xl lg:text-[4rem] max-w-[44rem] font-bold leading-snug">Steady your steps, we will climb together!</h2>
                                 <p class="text-lg font-semibold  leading-[1.78]">Enjoying the vast expanse of the sea of ​​​​sand, witnessing the splendor of Mount Semeru that soars into the sky, and gazing at the beauty of the sun moving out of its bed or otherwise enjoying the dim twilight from the Bromo ridge is an unforgettable experience when visiting Bromo.</p>
                                 <a href="#" class="flex items-center gap-2 text-lg font-bold leading-snug text-[#FBD784]">
                                     read more
@@ -167,41 +169,41 @@
                                  
                     </div>
                     <!-- If we need navigation buttons -->
-                    <div class="prev absolute hover:text-[#FFA343] cursor-pointer transition duration-500 ease-linear text-white left-10 top-1/2 z-10 -translate-y-1/2">
+                    <div class="prev absolute hover:text-[#FFA343] cursor-pointer transition duration-500 ease-linear text-white left-0 lg:left-10 top-1/2 z-10 -translate-y-1/2">
                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
                             <path d="M19.4187 4.3938L8.8125 15L19.4187 25.6063L21.1875 23.8388L12.3475 15L21.1875 6.1613L19.4187 4.3938Z" fill="currentColor"/>
                         </svg>
                     </div>
-                    <div class="next text-white hover:text-[#FFA343] cursor-pointer transition duration-500 ease-linear absolute right-10 top-1/2 z-10 -translate-y-1/2">
+                    <div class="next text-white hover:text-[#FFA343] cursor-pointer transition duration-500 ease-linear absolute right-0 lg:right-10 top-1/2 z-10 -translate-y-1/2">
                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
                             <path d="M10.5813 25.6062L21.1875 15L10.5813 4.3937L8.8125 6.1612L17.6525 15L8.8125 23.8387L10.5813 25.6062Z" fill="currentColor"/>
                         </svg>
                     </div>    
                 </div>
         
-                <div class="flex gap-4 justify-between items-center pt-56">
-                    <div class="text-white flex-1 space-y-7 max-w-[632px] ml-10">
+                <div class="flex max-md:flex-col gap-4 justify-between items-center pt-28 md:pt-40 lg:pt-56">
+                    <div class="text-white flex-1 space-y-7 max-w-[632px] lg:ml-10">
                         <p class="before:h-0.5 flex items-center uppercase text-lg font-bold leading-snug tracking-[0.375rem] before:mr-6 before:bg-[#FFC178] before:w-[4.5rem] text-[#FFC178]">INDONESIAN CULTURE</p>
-                        <h2 class="text-[4rem] font-bold leading-snug">Our culture here is very friendly to people</h2>
+                        <h2 class="text-4xl md:text-5xl lg:text-[4rem] font-bold leading-snug">Our culture here is very friendly to people</h2>
                         <p class="text-lg font-semibold  leading-[1.78]">known for his politeness, manners and gentleness. This becomes a characteristic when they mingle with other tribes and become basic traits that are passed down by their ancestors.</p>
                         <a href="#" class="flex items-center gap-2 text-lg font-bold leading-snug text-[#FBD784]">
                             read more
                             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="17" viewBox="0 0 25 17" fill="none"><path d="M16.5 0.376708L15.09 1.78671L20.67 7.37671L0.5 7.37671L0.5 9.37671L20.67 9.37671L15.08 14.9567L16.5 16.3767L24.5 8.37671L16.5 0.376708Z" fill="#FBD784"/></svg>
                         </a>
                     </div>
-                    <div class="max-w-fit flex-1"><img src="assets/img/image1.webp" alt=""></div>
+                    <div class="max-md:order-first max-w-fit flex-1"><img src="assets/img/image1.webp" alt=""></div>
                 </div>        
         
             </main>
         
-            <footer class="grid-container mt-56">
-                <div class="flex gap-14 items-center">
-                    <div class="font-bold text-2xl text-white leading-snug capitalize">QWERy</div>
-                    <p class="ml-auto text-[1.375rem] leading-snug text-white font-DMSans">Ready to explore?</p>
-                    <button class="font-DMSans flex items-center justify-center max-w-[15rem] rounded-lg w-full text-[1.0625rem] leading-tight font-bold bg-[#FFA343] p-6">Get started</button>
+            <footer class="grid-container mt-28 md:mt-40 lg:mt-56">
+                <div class="flex max-md:flex-wrap gap-14 items-center">
+                    <div class="max-[520px]:w-full font-bold text-lg md:text-xl lg:text-2xl text-white leading-snug capitalize">QWERy</div>
+                    <p class="ml-auto text-base lg:text-[1.375rem] leading-snug text-white font-DMSans">Ready to explore?</p>
+                    <button class="font-DMSans flex items-center justify-center max-w-[10rem] lg:max-w-[15rem] rounded-lg w-full text-[1.0625rem] leading-tight font-bold bg-[#FFA343] p-3 md:p-4 lg:p-6">Get started</button>
                 </div>
-                <div class="pt-14 border-t border-[rgba(255,255,255,.3)] mt-14 flex gap-20">
-                    <div class="flex flex-col justify-between flex-[1.5]">
+                <div class="pt-14 max-lg:flex-wrap border-t border-[rgba(255,255,255,.3)] mt-14 flex gap-y-6 gap-x-20">
+                    <div class="flex flex-col shrink-0 justify-between lg:flex-[1.5] max-lg:w-full ">
                         <p class="text-4xl leading-snug font-bold text-white">Let's go on vacation, Make your day</p>
                         <div class="flex border-b mt-3 border-[rgba(255,255,255,.3)]">
                             <div class="grow"><input type="text" class="placeholder:text-[rgba(255,255,255,0.5)] w-full h-full focus:outline-none font-DMSans text-white text-[.9375rem] leading-snug pl-3.5 bg-transparent" placeholder="Email address"></div>
@@ -212,37 +214,37 @@
                             </button>
                         </div>
                     </div>
-                    <div class="text-white flex flex-col gap-6 flex-1">
+                    <div class="text-white flex flex-col gap-3 lg:p-6 lg:flex-1 max-lg:w-auto ">
                         <a href="#" class="first:text-xl first:text-[#FFD1A0] first:font-bold text-[1.1875rem] leading-none">Services</a>
                         <a href="#" class="first:text-xl first:text-[#FFD1A0] first:font-bold text-[1.1875rem] leading-none">Email Marketing</a>
                         <a href="#" class="first:text-xl first:text-[#FFD1A0] first:font-bold text-[1.1875rem] leading-none">Campaigns</a>
                         <a href="#" class="first:text-xl first:text-[#FFD1A0] first:font-bold text-[1.1875rem] leading-none">Branding</a>
                         <a href="#" class="first:text-xl first:text-[#FFD1A0] first:font-bold text-[1.1875rem] leading-none">Offline</a>                
                     </div>
-                    <div class="text-white flex flex-col gap-6 flex-1">
+                    <div class="text-white flex flex-col gap-3 lg:p-6 lg:flex-1 max-lg:w-auto ">
                         <a href="#" class="first:text-xl first:text-[#FFD1A0] first:font-bold text-[1.1875rem] leading-none">About</a>        
                         <a href="#" class="first:text-xl first:text-[#FFD1A0] first:font-bold text-[1.1875rem] leading-none">Our Story</a>        
                         <a href="#" class="first:text-xl first:text-[#FFD1A0] first:font-bold text-[1.1875rem] leading-none">Benefits</a>        
                         <a href="#" class="first:text-xl first:text-[#FFD1A0] first:font-bold text-[1.1875rem] leading-none">Team</a>        
                         <a href="#" class="first:text-xl first:text-[#FFD1A0] first:font-bold text-[1.1875rem] leading-none">Careers</a>        
                     </div>
-                    <div class="text-white flex flex-col gap-6 flex-1">
+                    <div class="text-white flex flex-col gap-3 lg:p-6 lg:flex-1 max-lg:w-auto ">
                         <a href="#" class="first:text-xl first:text-[#FFD1A0] first:font-bold text-[1.1875rem] leading-none">Help</a>
                         <a href="#" class="first:text-xl first:text-[#FFD1A0] first:font-bold text-[1.1875rem] leading-none">FAQs</a>
                         <a href="#" class="first:text-xl first:text-[#FFD1A0] first:font-bold text-[1.1875rem] leading-none">Contact Us</a>
                     </div>
                 </div>
-                <div class="flex gap-12 items-center">
+                <div class="flex gap-x-12 gap-y-3 items-center max-md:flex-wrap py-16 md:py-24 lg:py-32">
                     <a href="#" class="text-white text-[.9375rem] leading-snug font-DMSans">Terms & Conditions</a>
                     <a href="#" class="text-white text-[.9375rem] leading-snug font-DMSans">Privacy Policy</a>
-                    <div class="flex gap-12 ml-auto items-center py-32">
+                    <div class="flex gap-12 md:ml-auto items-center">
                         <a href="#"><img src="assets/img/icons/Facebook.svg" alt=""></a>
                         <a href="#"><img src="assets/img/icons/twitter.svg" alt=""></a>
                         <a href="#"><img src="assets/img/icons/instagram.svg" alt=""></a>
                     </div>
                 </div>
                 <div>
-                    <p class="text-lg leading-[1.77] font-semibold text-center opacity-50 text-white mb-28 mt-6 ">Copyright 2021 QWERy</p>
+                    <p class="text-lg leading-[1.77] font-semibold text-center opacity-50 text-white mb text-lg md:text-xl-lg:14 md:mb-20 lg:mb-28 g:mt-6 ">Copyright 2021 QWERy</p>
                 </div>
             </footer>
 
